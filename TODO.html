@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Goal Tracker</h1>
+
+    <button id="enter-todo-list">Enter To-do List</button>
+
+    <div id="app-container">
+        <form id="add-goal-form">
+            <div>
+                <input type="radio" name="category" value="finance" id="finance" checked>
+                <label for="finance">Finance</label>
+            </div>
+            <div>
+                <input type="radio" name="category" value="personal" id="personal">
+                <label for="personal">Personal</label>
+            </div>
+            <div>
+                <input type="radio" name="category" value="fitness" id="fitness">
+                <label for="fitness">Fitness</label>
+            </div>
+            <input type="text" name="description" placeholder="Enter your goal">
+            <button type="submit">Add Goal</button>
+        </form>
+
+        <div id="goals-container">
+            <h2>Finance Goals</h2>
+            <ul id="finance-goals"></ul>
+            <h2>Personal Goals</h2>
+            <ul id="personal-goals"></ul>
+            <h2>Fitness Goals</h2>
+            <ul id="fitness-goals"></ul>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

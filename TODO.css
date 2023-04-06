@@ -1,0 +1,165 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: #333;
+    line-height: 1.5;
+    background: linear-gradient(45deg, #83a4d4, #b6fbff);
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    font-size: 2.5rem;
+    animation: fadeInDown 1.5s ease;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    animation: fadeInDown 1.5s ease;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 1.5s ease;
+}
+
+select,
+input,
+button {
+    padding: 0.75rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+select,
+input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3a86ff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2667c9;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Goal list styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 2rem;
+    animation: fadeIn 1.5s ease;
+}
+
+li {
+    background-color: #fff;
+    padding: 0.75rem;
+    border-radius: 5px;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+li.completed {
+    background-color: #d9ead3;
+    text-decoration: line-through;
+    color: #888;
+}
+
+li:hover {
+    background-color: #f3f3f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.18);
+}
+
+li.completed:hover {
+    background-color: #c6d7c2;
+}
+
+.goals-container h2 {
+    margin-bottom: 1rem;
+}
+
+#restart-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #3a86ff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#restart-btn:hover {
+    background-color: #2667c9;
+}
+
+#enter-todo-list {
+    display: block;
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem;
+    background-color: #3a86ff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#enter-todo-list:hover {
+    background-color: #2667c9;
+}
+
+/* Radio button styles */
+form div {
+    display: inline-flex;xq
+    align-items: center;
+    margin-right: 1rem;
+}
+
+
